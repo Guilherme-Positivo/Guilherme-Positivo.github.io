@@ -1,0 +1,104 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftnav img {
+    max-height: 50px; /* Limita a altura da logo para não expandir demais a navbar */
+    width: auto;      /* Mantém a proporção da logo */
+}
+
+/* Rightnav (Links) */
+.rightnav {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+.rightnav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+.rightnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 4px; /* Deixa os links com cantos arredondados ao passar o mouse */
+}
+
+.rightnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 4px;
+}
+
+
+/* Footer Geral */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #04AA6D; /* Destaque para os títulos */
+}
+
+.footer-section p, .footer-section a {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #04AA6D;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilo dos ícones sociais */
+.footer-section .social a img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
